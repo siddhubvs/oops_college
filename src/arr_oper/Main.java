@@ -6,7 +6,7 @@ public class Main {
     public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int r, c;
+        int r;
         System.out.println("enter size of matrix");
         r = sc.nextInt();
 
@@ -17,7 +17,7 @@ public class Main {
         int choice;
 
         do {
-            System.out.println("enter choice\n1.sum\n2.average\n3.maximum\n4.minimum\n5.linear search\n6.display\n7.exit");
+            System.out.println("enter choice\n1.sum\n2.average\n3.maximum\n4.minimum\n5.linear search\n6.display\n7.binarysearch\n8.exit");
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
@@ -46,9 +46,12 @@ public class Main {
                     obj1.display();
                     break;
                 case 7:
+                    obj1.binarysearch();
+                    break;
+                case 8:
                     System.exit(0);
             }
-        } while (choice != 7);
+        } while (choice != 8);
     }
 }
 

@@ -63,4 +63,16 @@ public class arr_oper {
         }
         return -1;
     }
+    public void binarysearch(){
+
+        for(int i=arr.length-1;i>0;i--){
+            for (int j=arr.length-i-1;j>0;j--){
+                if(arr[j]<arr[j-1]){
+                    int temp=arr[j];
+                    arr[j]=arr[j-1];
+                    arr[j-1]=temp;
+                }
+            }
+        }
+    }
 }

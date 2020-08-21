@@ -15,6 +15,7 @@ public class CinemaTicket {
 
     void BookingOption1() {
         boolean booked = false;
+
         do {
             System.out.println("enter row number and column number");
             int r = sc.nextInt();
@@ -27,7 +28,7 @@ public class CinemaTicket {
                 System.out.println("seat is booked for you");
                 booked = true;
             }
-        } while (booked = false);
+        } while (booked == false);
     }
 
     void BookingOption2() {
@@ -83,7 +84,7 @@ public class CinemaTicket {
     void display() {
         for (int row = 0; row < tic.length; row++) {
             for (int col = 0; col < tic[0].length; col++) {
-                System.out.println(tic[row][col] + " ");
+                System.out.printf("%d\t",tic[row][col]);;
             }
             System.out.println();
         }
