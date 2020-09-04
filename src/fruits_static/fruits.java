@@ -4,8 +4,9 @@ public class fruits {
      int no;
     String name;
     static int  n=0;
-    public fruits(int no, String name) {
-        this.no = no;
+    public fruits( String name) {
+        n++;
+        this.no = n;
         this.name = name;
     }
 
@@ -27,7 +28,7 @@ public class fruits {
 
 
     void display(){
-        n++;
+
         System.out.printf("%d\n",no);
         System.out.printf("%s\n",name);
 

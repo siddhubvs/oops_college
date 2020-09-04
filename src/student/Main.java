@@ -1,7 +1,5 @@
 package student;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -10,8 +8,9 @@ public class Main {
 
        student1.setdata(123,"raju","hyderabad");
        student2.setdata(124,"asif","secunderabad");
-
+        System.out.println("student 1 details are\n");
        student1.display();
+        System.out.println("student 2 details are\n");
        student2.display();
 
 

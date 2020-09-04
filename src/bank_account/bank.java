@@ -48,6 +48,6 @@ public class bank {
 
     @Override
     public String toString() {
-        return "account_holder name : "+this.accountholder_name+"\naccount_holdernumber"+this.account_number+"\nbalance"+this.balance;
+        return "account_holder name : "+this.accountholder_name+"\naccount_holdernumber : "+this.account_number+"\nbalance : "+this.balance;
     }
 }

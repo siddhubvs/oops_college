@@ -28,5 +28,10 @@ public class Horse {
     public String getColor() {
         return color;
     }
+    public void display(){
+        System.out.println("age is "+getAge());
+        System.out.println("color is "+getColor());
+        System.out.println("weight is "+getWeight());
+    }
 }
 

@@ -1,6 +1,5 @@
 package bank_account;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -16,11 +15,13 @@ public class Main {
         ba = sc.nextDouble();
 
         bank b = new bank(an, no, ba);
-        System.out.println("enter your choice\n1.deposit\n2.withdraw\3.display");
-        int i = sc.nextInt();
-        boolean h = false;
 
+
+
+        int i;
         do {
+            System.out.println("enter your choice\n1.deposit\n2.withdraw\n3.display\n4.exit");
+             i = sc.nextInt();
             switch (i) {
                 case 1:
                     System.out.println("enter amount to be deposited\n");
@@ -35,10 +36,11 @@ public class Main {
                 case 3:
                     System.out.println(b);
                     break;
+                case 4:System.exit(0);
             }
 
 
-        } while (h = false);
+        }while(i!= 4);
         System.out.println(b);
     }
 }

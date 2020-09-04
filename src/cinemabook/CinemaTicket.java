@@ -84,7 +84,7 @@ public class CinemaTicket {
     void display() {
         for (int row = 0; row < tic.length; row++) {
             for (int col = 0; col < tic[0].length; col++) {
-                System.out.printf("%d\t",tic[row][col]);;
+                System.out.printf("%d\t",tic[row][col]);
             }
             System.out.println();
         }
